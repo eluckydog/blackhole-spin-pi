@@ -1,0 +1,15 @@
+# BlackHole Spin Π — Requirements
+
+# Required
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+
+# Optional (for QNM frequency calculation)
+qnm==0.4.4
+
+# Optional (for real catalog queries)
+astroquery>=0.4.7
+
+# For skill packaging (optional)
+qclaw-skill-tools>=1.0.0

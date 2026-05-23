@@ -1,0 +1,37 @@
+{
+  "name": "Sgr_A_star",
+  "type": "supermassive_black_hole",
+  "source": "EHT Collaboration, 'First Sagittarius A* Event Horizon Telescope results', ApJL, 2022",
+  "url": "https://doi.org/10.3847/2041-8213/ac6674",
+  "parameters": {
+    "mass_solar": 4.3e6,
+    "mass_uncertainty": 0.5e6,
+    "spin_dimensionless": 0.5,
+    "spin_note": "Estimated from star orbits and shadow asymmetry",
+    "distance_kpc": 8.2,
+    "distance_uncertainty": 0.3
+  },
+  "observations": {
+    "shadow_angular_diameter_microarcsec": {
+      "value": 48.0,
+      "uncertainty": 7.0,
+      "source": "EHT 2022, Paper I"
+    },
+    "shadow_circularity": {
+      "value": 0.96,
+      "note": "Nearly circular, consistent with Kerr BH"
+    }
+  },
+  "calculation_comparison": {
+    "horizon_area": {
+      "script": "code/kerr_horizon.py",
+      "predicted_A_M2": "TBD",
+      "note": "Will calculate using M and a*"
+    },
+    "spin_precession": {
+      "script": "code/spin_precession.py",
+      "predicted_Omega_LT": "TBD",
+      "note": "Lense-Thirring precession at ISCO"
+    }
+  }
+}

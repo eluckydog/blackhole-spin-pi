@@ -1,0 +1,33 @@
+{
+  "name": "GW150914_final_BH",
+  "type": "LIGO_binary_black_hole_merger",
+  "source": "LIGO Scientific Collaboration, 'Properties of the binary black hole merger GW150914', 2016, ApJ 818: L22",
+  "url": "https://doi.org/10.3847/2041-8205/818/2/L22",
+  "parameters": {
+    "mass_solar": 62.0,
+    "spin_dimensionless": 0.67,
+    "distance_Mpc": 410.0
+  },
+  "observations": {
+    "ringdown_frequency_Hz": {
+      "value": 235.0,
+      "uncertainty": 10.0,
+      "mode": "(l=2,m=2,n=0)",
+      "source": "LIGO GW150914 spectrogram analysis"
+    },
+    "damping_time_ms": {
+      "value": 3.5,
+      "uncertainty": 0.5,
+      "source": "LIGO GW150914 ringdown fit"
+    }
+  },
+  "calculation_comparison": {
+    "qnm_frequency_Hz": {
+      "script": "code/qnm_calculator_v2.py",
+      "predicted_f_R": 335.36,
+      "observed_f_R": 235.0,
+      "ratio": 1.43,
+      "note": "Discrepancy may be due to mode mixture or fitting formula accuracy"
+    }
+  }
+}

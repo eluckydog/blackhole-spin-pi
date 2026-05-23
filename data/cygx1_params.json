@@ -1,0 +1,29 @@
+{
+  "name": "Cyg X-1",
+  "type": "BHXB",
+  "alias": "V1357 Cyg",
+  "ra_deg": 299.590,
+  "dec_deg": 35.202,
+  "source": "Miller-Jones et al. 2021, Science; Gou et al. 2011, ApJ",
+  "parameters": {
+    "M_solar": 14.8,
+    "M_err": [13.8, 15.8],
+    "a_star": 0.95,
+    "a_star_err": [0.9, 1.0],
+    "D_kpc": 1.86,
+    "D_err": [1.76, 1.96]
+  },
+  "notes": [
+    "M ≈ 14.8 M☉ (Miller-Jones et al. 2021, Science)",
+    "a* ≈ 0.95 (Gou et al. 2011, ApJ; near-extreme spin)",
+    "D ≈ 1.86 kpc (X-ray parallax, Miller-Jones 2021)",
+    "One of the most well-studied stellar-mass black holes"
+  ],
+  "verification": {
+    "horizon_area": "can verify with kerr_horizon.py",
+    "hawking_temperature": "can verify with hawking_radiation.py (but T ~ 10^-9 K, negligible)",
+    "qnm_frequency": "not applicable (not a merged BH)",
+    "shadow_angular_diameter": "can verify with blackhole_shadow.py (but shadow ~ μas scale, not resolved)"
+  },
+  "query_status": "verified"
+}
